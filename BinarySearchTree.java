@@ -111,8 +111,6 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value>{
                 current = nodeStack.pop();
             }
         }
-        // done
-        return;
     }
 
     /*

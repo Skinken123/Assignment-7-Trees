@@ -23,10 +23,7 @@
          * @param val, the value stored in the new node, could be any form of data such as a object or a simple string
          */
         public void add(Key key, Value val){
-            if (this.key.equals(key)){
-                this.value = val;
-                return;
-            }
+            if (this.key.equals(key)) this.value = val;
             else if(this.key.compareTo(key) > 0){
                 if (this.left != null) this.left.add(key, val);
                 else this.left = new Node(key, val); 
